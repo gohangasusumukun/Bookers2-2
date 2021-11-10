@@ -4,4 +4,14 @@ class HomesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
+  test "should get top" do
+    get homes_top_url
+    assert_response :success
+  end
+
+  test "should get about" do
+    get homes_about_url
+    assert_response :success
+  end
+
 end
