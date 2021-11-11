@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
 
   has_many :books, dependent: :destroy
+  
+  # 画像投稿用メゾット
+  attachment :profile_image
 end
